@@ -34,7 +34,7 @@ functions:
 
     events:
       # Every day at 15:00 UTC / 10am CDT
-      - schedule: cron(0 15 * * ? *)
+      - schedule: cron(0 0 * * ? 5)
 
     environment:
       GROUP_BY: ${param:group, 'SERVICE'}
